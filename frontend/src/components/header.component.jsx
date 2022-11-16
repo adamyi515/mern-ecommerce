@@ -1,4 +1,5 @@
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
 
 const Header = () => {
     return(
@@ -9,8 +10,12 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/cart">Cart</Nav.Link>
-                        <Nav.Link href="/login">Sign In</Nav.Link>
+                        <Nav.Link href="/cart">
+                            <FaShoppingCart /> Cart
+                        </Nav.Link>
+                        <Nav.Link href="/login">
+                            <FaUser /> Sign In
+                        </Nav.Link>
                         
                     </Nav>
                     </Navbar.Collapse>
