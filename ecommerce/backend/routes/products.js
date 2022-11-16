@@ -5,4 +5,4 @@ const { getProducts } = require('../controller/products');
 router.get('/', getProducts)
 
 
-module.exports = router;
+module.exports = router
